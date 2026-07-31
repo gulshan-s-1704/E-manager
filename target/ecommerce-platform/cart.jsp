@@ -12,7 +12,7 @@
 
 <c:choose>
     <c:when test="${empty cartItems}">
-        <p>Your cart is empty. <a href="${pageContext.request.contextPath}/products">Continue shopping</a></p>
+        <p>Your cart is empty. <a href="${pageContext.request.contextPath}/products.jsp">Continue shopping</a></p>
     </c:when>
     <c:otherwise>
         <table>

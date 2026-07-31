@@ -7,7 +7,7 @@
 <div class="card" style="text-align:center; background:linear-gradient(135deg,#1a73e8,#0d47a1); color:white;">
     <h1>Welcome to ShopEase</h1>
     <p>Your one-stop shop for electronics, clothing, books and more.</p>
-    <a class="btn accent" href="${pageContext.request.contextPath}/products">Browse Products</a>
+    <a class="btn accent" href="${pageContext.request.contextPath}/products.jsp">Browse Products</a>
 </div>
 
 <h2>Why shop with us?</h2>
