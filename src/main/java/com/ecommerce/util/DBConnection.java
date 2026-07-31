@@ -21,7 +21,7 @@ public class DBConnection {
             "DB_URL",
             "jdbc:mysql://localhost:3306/ecommerce_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true");
     private static final String DB_USER = getEnvOrDefault("DB_USER", "root");
-    private static final String DB_PASSWORD = getEnvOrDefault("DB_PASSWORD", "root");
+    private static final String DB_PASSWORD = getEnvOrDefault("DB_PASSWORD", "123456");
 
     private static String getEnvOrDefault(String key, String defaultValue) {
         String value = System.getenv(key);

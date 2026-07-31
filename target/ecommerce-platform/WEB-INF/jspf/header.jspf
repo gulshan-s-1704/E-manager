@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${pageTitle != null ? pageTitle : 'ShopEase'}</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+</head>
+<body>
+<div class="navbar">
+    <a class="brand" href="${pageContext.request.contextPath}/index.jsp">🛒ShopEase</a>
+    <div class="links">
+        <a href="${pageContext.request.contextPath}/products.jsp">Products</a>
+        <a href="${pageContext.request.contextPath}/cart.jsp">Cart</a>
+        <c:choose>
+            <c:when test="${not empty sessionScope.customer}">
+                <a href="${pageContext.request.contextPath}/orders.jsp">My Orders</a>
+                <c:if test="${sessionScope.isAdmin}">
+                    <a href="${pageContext.request.contextPath}/admin/dashboard.jsp">Admin</a>
+                </c:if>
+                <a href="${pageContext.request.contextPath}/customer?action=logout">Logout (${sessionScope.customer.fullName})</a>
+            </c:when>
+            <c:otherwise>
+                <a href="${pageContext.request.contextPath}/login.jsp">Login</a>
+                <a href="${pageContext.request.contextPath}/register.jsp">Register</a>
+            </c:otherwise>
+        </c:choose>
+    </div>
+</div>
+<div class="container">
