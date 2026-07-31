@@ -8,9 +8,9 @@
 </head>
 <body>
 <div class="navbar">
-    <a class="brand" href="${pageContext.request.contextPath}/index.jsp">🛒ShopEase</a>
+    <a class="brand" href="${pageContext.request.contextPath}/index.jsp">ShopEase</a>
     <div class="links">
-        <a href="${pageContext.request.contextPath}/products">Products</a>
+        <a href="${pageContext.request.contextPath}/products.jsp">Products</a>
         <a href="${pageContext.request.contextPath}/cart.jsp">Cart</a>
         <c:choose>
             <c:when test="${not empty sessionScope.customer}">
