@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="com.ecommerce.dao.ProductDAO, com.ecommerce.dao.CategoryDAO, com.ecommerce.model.Product, com.ecommerce.model.Category, java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -18,10 +18,10 @@
 <c:set var="pageTitle" value="Products Catalog – E-Manager"/>
 <%@ include file="/WEB-INF/jspf/header.jspf" %>
 
-<div class="section-header" style="margin-bottom:20px;">
+<div class="section-header" style="margin-bottom:24px;">
     <div>
-        <h1>All Products Catalog</h1>
-        <p>Explore our complete catalog of ${products != null ? products.size() : 0} premium items across Electronics, Fashion, Home & Accessories.</p>
+        <h1 style="font-size:2rem; font-weight:800; margin-bottom:6px;">All Products Catalog</h1>
+        <p style="color:var(--text-muted);">Explore our complete collection of ${products != null ? products.size() : 0} items across Electronics, Fashion, Home &amp; Living, and Accessories.</p>
     </div>
 </div>
 
@@ -58,7 +58,7 @@
         <div class="card" style="text-align:center; padding:60px 20px;">
             <div style="font-size:3rem; margin-bottom:12px;">🔍</div>
             <h3>No products found</h3>
-            <p style="color:var(--text-muted); margin-bottom:20px;">We couldn't find any items matching your search criteria. Try a different term or clear filters.</p>
+            <p style="color:var(--text-muted); margin-bottom:20px;">We couldn't find any items matching your search criteria. Try a different search term or clear the filter.</p>
             <a class="btn" href="${pageContext.request.contextPath}/products">View All Products</a>
         </div>
     </c:when>
