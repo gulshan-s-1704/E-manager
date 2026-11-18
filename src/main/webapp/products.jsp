@@ -70,13 +70,13 @@
                         <c:set var="imgSrc" value="${p.imageUrl}"/>
                         <c:choose>
                             <c:when test="${not empty imgSrc && (imgSrc.startsWith('http://') || imgSrc.startsWith('https://'))}">
-                                <img src="${imgSrc}" alt="${p.name}" loading="lazy">
+                                <img src="${imgSrc}" alt="${p.name}">
                             </c:when>
                             <c:when test="${not empty imgSrc}">
-                                <img src="${pageContext.request.contextPath}/${imgSrc}" alt="${p.name}" loading="lazy">
+                                <img src="${pageContext.request.contextPath}/${imgSrc}" alt="${p.name}">
                             </c:when>
                             <c:otherwise>
-                                <img src="${pageContext.request.contextPath}/images/products/elec_headphones.jpg" alt="${p.name}" loading="lazy">
+                                <img src="${pageContext.request.contextPath}/images/products/elec_headphones.jpg" alt="${p.name}">
                             </c:otherwise>
                         </c:choose>
                     </div>
