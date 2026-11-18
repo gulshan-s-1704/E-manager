@@ -11,7 +11,7 @@
             CategoryDAO cDao = new CategoryDAO();
             request.setAttribute("products", pDao.getAllProducts());
             request.setAttribute("categories", cDao.getAllCategories());
-        } catch (Exception ignored) {}
+        } catch (Throwable ignored) {}
     }
 %>
 
