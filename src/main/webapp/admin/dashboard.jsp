@@ -18,7 +18,7 @@
             request.setAttribute("statusBreakdown", analyticsDAO.getOrderStatusBreakdown());
             request.setAttribute("lowStock", inventoryDAO.getLowStockProducts());
             request.setAttribute("catalogCount", productDAO.getAllProducts().size());
-        } catch (Throwable ignored) {}
+        } catch (Exception ignored) {}
     }
 %>
 

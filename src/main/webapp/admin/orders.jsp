@@ -9,7 +9,7 @@
         try {
             OrderDAO oDao = new OrderDAO();
             request.setAttribute("orders", oDao.getAllOrders());
-        } catch (Throwable ignored) {}
+        } catch (Exception ignored) {}
     }
 %>
 

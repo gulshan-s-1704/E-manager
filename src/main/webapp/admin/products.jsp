@@ -13,7 +13,7 @@
             request.setAttribute("products", pDao.getAllProducts());
             request.setAttribute("categories", cDao.getAllCategories());
             request.setAttribute("lowStock", iDao.getLowStockProducts());
-        } catch (Throwable ignored) {}
+        } catch (Exception ignored) {}
     }
 %>
 

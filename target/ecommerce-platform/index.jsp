@@ -20,8 +20,8 @@
         request.setAttribute("featuredProducts", featured);
         request.setAttribute("categories", allCats);
         request.setAttribute("totalCatalogCount", allProds != null ? allProds.size() : 0);
-    } catch (Throwable e) {
-        request.setAttribute("dbError", e.getMessage() != null ? e.getMessage() : e.toString());
+    } catch (Exception e) {
+        request.setAttribute("dbError", e.getMessage());
     }
 %>
 
