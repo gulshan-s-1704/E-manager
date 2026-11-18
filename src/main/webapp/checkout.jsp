@@ -24,7 +24,7 @@
         <h2 style="font-size:1.3rem; margin-bottom:16px;">1. Shipping Information</h2>
         
         <form action="${pageContext.request.contextPath}/checkout" method="post" id="checkoutForm">
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
+            <div class="form-row-2col" style="margin-bottom:16px;">
                 <div class="form-group" style="margin:0;">
                     <label>Recipient Full Name</label>
                     <input class="form-control" type="text" value="${customer.fullName}" readonly style="background:#f1f5f9;">

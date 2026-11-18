@@ -43,7 +43,7 @@
 </div>
 
 <!-- Quick Category Filter Pills -->
-<div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:28px;">
+<div class="category-pills-bar">
     <a class="btn small ${empty selectedCategoryId ? 'accent' : 'outline'}" href="${pageContext.request.contextPath}/products">All Categories</a>
     <c:forEach var="cat" items="${categories}">
         <a class="btn small ${selectedCategoryId == cat.categoryId ? 'accent' : 'outline'}" 

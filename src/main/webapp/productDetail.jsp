@@ -113,7 +113,7 @@
         </c:choose>
 
         <!-- Trust Badges -->
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:28px; padding-top:20px; border-top:1px solid var(--border);">
+        <div class="detail-trust-grid" style="margin-top:28px; padding-top:20px; border-top:1px solid var(--border);">
             <div style="display:flex; align-items:center; gap:8px; font-size:0.82rem; color:var(--slate-600);">
                 <span>🚚</span>
                 <span><strong>Free Standard Delivery</strong> across all regions</span>
