@@ -1,4 +1,64 @@
-</div>
-<div class="footer">&copy; 2026 ShopEase — E-Commerce Product and Order Management Platform</div>
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <div class="brand-wrapper" style="margin-bottom:12px;">
+                <div class="brand-logo-icon" style="width:32px; height:32px; font-size:1rem;">E</div>
+                <div class="brand">
+                    <span>E-Manager</span>
+                    <span class="brand-sub">Platform</span>
+                </div>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6; margin:0 0 16px;">
+                A high-performance full-stack e-commerce product catalog, inventory tracking, and transactional order management system built with Java, Servlets, JSP, JDBC, and MySQL.
+            </p>
+            <div style="font-size:0.82rem; color:var(--slate-500);">
+                ⚡ Powered by HikariCP Connection Pooling & Apache Tomcat
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Categories</h4>
+            <ul>
+                <li><a href="${pageContext.request.contextPath}/products?categoryId=1">Electronics & Audio</a></li>
+                <li><a href="${pageContext.request.contextPath}/products?categoryId=2">Modern Fashion</a></li>
+                <li><a href="${pageContext.request.contextPath}/products?categoryId=3">Home & Lifestyle</a></li>
+                <li><a href="${pageContext.request.contextPath}/products?categoryId=4">Accessories & Gear</a></li>
+                <li><a href="${pageContext.request.contextPath}/products">View Full Catalog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Customer Services</h4>
+            <ul>
+                <li><a href="${pageContext.request.contextPath}/cart">View Shopping Cart</a></li>
+                <li><a href="${pageContext.request.contextPath}/orders">Track Your Orders</a></li>
+                <li><a href="${pageContext.request.contextPath}/login.jsp">Customer Account</a></li>
+                <li><a href="${pageContext.request.contextPath}/login.jsp?admin=true">Admin Management Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Security & Trust</h4>
+            <ul>
+                <li><span style="font-size:0.88rem; color:var(--slate-600);">🔒 SHA-256 Hashed Passwords</span></li>
+                <li><span style="font-size:0.88rem; color:var(--slate-600);">🛡️ ACID-Compliant Orders</span></li>
+                <li><span style="font-size:0.88rem; color:var(--slate-600);">📦 Real-Time Stock Updates</span></li>
+                <li><span style="font-size:0.88rem; color:var(--slate-600);">💳 Simulated Payment Gateway</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div>
+            &copy; 2026 E-Manager E-Commerce Platform. All rights reserved.
+        </div>
+        <div>
+            Developed with Java Full Stack Architecture &bull; Designed for Production Deployment
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
